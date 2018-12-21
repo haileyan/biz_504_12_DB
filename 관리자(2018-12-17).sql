@@ -1,0 +1,13 @@
+--여기는 관리자화면입니다.
+
+--TABLESPACE 생성
+CREATE TABLESPACE myTBL1
+DATAFILE 'D:/bizwork/Ordata/mytbl_1.dbf'
+SIZE 100M
+AUTOEXTEND ON NEXT 1M;
+
+--새로운 사용자
+CREATE USER myMem IDENTIFIED BY 1234
+DEFAULT TABLESPACE myTBL1;
+
+GRANT DBA to myMem;
