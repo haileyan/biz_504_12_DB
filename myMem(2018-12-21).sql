@@ -61,6 +61,8 @@ FROM tbl_iolist
 GROUP BY io_cname
 ORDER BY io_cname;
 
+
+
 CREATE TABLE tbl_product(
     p_code	CHAR(9)		PRIMARY KEY,
     p_name	nVARCHAR2(50)	NOT NULL,	
